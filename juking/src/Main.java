@@ -13,6 +13,7 @@ public class Main {
     public static String MakeFormula(){
         StringBuilder build = new StringBuilder();
         int count = (int) (Math.random() * 2) + 1; // generate random count
+        System.out.println(count);
         int start = 0;
         int number1 = (int) (Math.random() * 99) + 1;
         build.append(number1);
