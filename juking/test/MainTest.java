@@ -21,7 +21,7 @@ public class MainTest {
     @Test
     public void solvetest1() {
         String formula= "3*71*61*78";
-        assertEquals(Main.Solve(formula),"1013454");
+        assertEquals(Main.Solve(formula),"3*71*61*78=1013454");
     }
 
     @Test
@@ -54,6 +54,6 @@ public class MainTest {
     @Test
     public void solvetest4() {
         String formula= "10*10+80";
-        assertEquals(Main.Solve(formula),"180");
+        assertEquals(Main.Solve(formula),"10*10+80=180");
     }
 }
