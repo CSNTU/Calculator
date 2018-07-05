@@ -38,7 +38,7 @@ public class Main {
                     tempStack.push(formula.substring(k));
                 }
                 else {
-                    if(k < j){
+                    if(k <= j){            // bug1:  "k < j "   fixed : " k <= j"
                         tempStack.push(formula.substring(k, j + 1));
                     }
                     if(operatorStack.empty()){
