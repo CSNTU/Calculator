@@ -14,9 +14,6 @@ public class MainTest {
     public void tearDown() throws Exception {
     }
 
-    @Test
-    public void makeFormula() {
-    }
 
     @Test
     public void solvetest1() {
@@ -55,5 +52,11 @@ public class MainTest {
     public void solvetest4() {
         String formula= "10*10+80";
         assertEquals(Main.Solve(formula),"10*10+80=180");
+    }
+
+    @Test
+    public void solvetest5() {
+        String formula= "3÷5+2";
+        assertEquals(Main.Solve(formula),"3÷5+2=900");
     }
 }

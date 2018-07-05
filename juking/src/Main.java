@@ -4,10 +4,22 @@ public class Main {
 
     private static String[] op = { "+", "-", "*", "/" };// Operation set
     public static void main(String[] args) {
-        String question = MakeFormula();
-        System.out.println(question);
-        String ret = Solve(question);
-        System.out.println(ret);
+
+        String question; //= MakeFormula();
+        if (args.length == 0) {            // no args
+            question = MakeFormula();
+            System.out.println(question);
+            String ret = Solve(question);
+            System.out.println(ret);
+        } else {                         //  args[0] : the number of formulas
+           // System.out.println(args[0]);
+            for(int j=0; j < Integer.parseInt(args[0]);j++){
+                question = MakeFormula();
+                System.out.println(question);
+                String ret = Solve(question);
+                System.out.println(ret);
+            }
+        }
     }
 
     public static String MakeFormula(){
